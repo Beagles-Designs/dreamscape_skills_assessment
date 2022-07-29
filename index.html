@@ -35,27 +35,6 @@
           display:inline-block;
         }
 
-        body[data-outlook-cycle] .hero-image{
-              width:600px;
-            }
-
-        @media screen and (max-width: 375px) {
-            .faux-absolute {
-                height: 163px;
-            }
-        }
-
-        @media screen and (min-width: 376px) and (max-width: 399px) {
-             .faux-absolute {
-                height: 215px;
-            }
-        }
-
-        @media screen and (min-width: 400px) and (max-width: 450px){
-            .faux-absolute {
-                height: 215px;
-            }
-        }
       
         @media screen and (max-width: 400px) {
             h1 {
@@ -63,19 +42,6 @@
                 line-height: 22px!important;
             }
 
-        }
-
-        @media screen and (min-width: 451px) and (max-width: 500px){ 
-             .faux-absolute {
-                height: 247px;
-            }
-
-        }
-
-        @media screen and (min-width: 501px) and (max-width: 599px) {
-            .faux-absolute {
-                height: 286px;
-            }
         }
 
         @media screen and (max-width: 480px) {
@@ -88,9 +54,8 @@
          @media screen and (min-width: 400px) and (max-width: 504px) {
            h1 {
                 font-size: 20px!important;
-                line-height:  24px!important;
-                margin: 13px 15px!important;
-            }
+                line-height: 24px!important;
+            
         }
 
 
@@ -114,7 +79,7 @@
                     <tr>
                     <td>
                     <![endif]-->
-                        <table role="presentation" style="margin: 0 auto;max-width:600px;border:none;border-spacing:0;text-align:left;font-family:Georgia,sans-serif;font-size:16px;line-height:22px;color:#363636;">
+                        <table role="presentation" width="600" style="margin: 0 auto;max-width:600;border:none;border-spacing:0;text-align:left;font-family:Georgia,sans-serif;font-size:16px;line-height:22px;color:#363636;">
                             <tr> <!--- Header Table --->
                                 <td style="padding: 0; box-sizing:border-box;height:30px; width:100%; background: #FFBA49;">
                                     <p style="margin: 0;text-align:center;font-family:Georgia; font-size:12px;font-weight: bold;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">Welcome! Get 15% off your order!</p>
@@ -126,22 +91,20 @@
                                 </td>
                             </tr>
                             <tr> <!---Overlay Section  -->
-                                <!--[if mso]>
-                                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" stroked="false" filled="false" style="mso-width-percent: 1000; position:absolute; top:80px; left:16px;">
-                                    <v:textbox inset="0,0,0,0">
-                                <![endif]-->
-                                <td style="padding:0;font-size:24px;line-height:28px;font-weight:bold;position:relative">
-                                    <div class="faux-absolute" style="margin: 0 auto; text-align: center;">
-                                        <img class="hero-image" src="https://dl.dropboxusercontent.com/s/oodsl9j5kqss82u/emma-simpson-mNGaaLeWEp0-unsplash.png?dl=0" width="600" alt="" style="width:100%;height:auto;display:block;border:none;text-decoration:none;color:#363636;">
+                                <td align="center" style="padding: 0;background: url(https://dl.dropboxusercontent.com/s/oodsl9j5kqss82u/emma-simpson-mNGaaLeWEp0-unsplash.png?dl=0) #B5CFE3; background-size:cover; background-position:center; height:384px;vertical-align: bottom;">
+                                    <!--[if gte mso 9]>
+                                    <v:rect xmlns_v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; background-color:#B5CFE3;">
+                                               <v:fill type="frame" src="fixed-background.jpg" />
+                                               <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                                               <![endif]-->
+                                    <div style="padding: 0;margin: 0;height: auto;width: 54%;background:#fff">
+                                        <h1 style="padding:17px 19px;margin: 0;font-size:28px;font-family:Georgia;line-height: 32px;font-weight: bold;letter-spacing:0;color: #20A39E;text-align:center;">You’ve finally found your fold.</h1>
                                     </div>
-                                    <div class="faux-position" style="transform: translate(-50%, 0);height: auto;width: 54%;background:#fff">
-                                        <h1 style="padding:0;margin: 17px 19px;font-size:28px;font-family:Georgia;line-height: 32px;font-weight: bold;letter-spacing:0;color: #20A39E;text-align:center;">You’ve finally found your fold.</h1>
-                                    </div>
+                                    <!--[if gte mso 9]>
+                                    </v:textbox>
+                                    </v:rect>
+                                    <![endif]-->
                                 </td>
-                                <!--[if mso]>
-                                </v:textbox>
-                                </v:rect>
-                                <![endif]-->
                             </tr> <!-- End overlay section -->
                             <tr>
                                 <td align="center" style="padding:20px 0 42px 0;">
@@ -153,7 +116,7 @@ font-size:12px;line-height: 20px;letter-spacing:2.4px;color: #23001E;text-decora
                                 </td>
                             </tr>
                             <tr> <!--Kept sizing of image and div and split into vertical column. Easy to resize so they stay side by side longer on smaller screens. -->
-                                <td style="padding:0;font-size:0;">
+                                <td align="center" style="padding:0;font-size:0;">
                                     <!--[if mso]>
                                     <table role="presentation" width="100%">
                                     <tr>
